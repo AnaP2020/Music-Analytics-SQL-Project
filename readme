@@ -1,13 +1,11 @@
-Music Analytics: Spotify Popularity and Grammy Recognition
+# 🎵 Music Analytics: Spotify Popularity and Grammy Recognition
 
-Project Overview
-
-This project was developed as part of the Ironhack Database Systems module.
+## 📌 Project Overview
+This project was developed as part of the **Ironhack Database Systems module**.
 
 The objective was to design and implement a relational database using SQL and Python, integrating data from Spotify and the Grammy Awards to explore the relationship between commercial popularity and critical recognition in the music industry.
 
-The project includes:
-
+**The project includes:**
 - Data cleaning and preprocessing with Python
 - Relational database design
 - SQL database creation in MySQL
@@ -16,74 +14,56 @@ The project includes:
 
 ---
 
-Business Problem
-
-Music success can be measured in different ways.
-
-Streaming platforms like Spotify reflect popularity, while Grammy Awards represent industry recognition.
+## ❓ Business Problem
+Music success can be measured in different ways. Streaming platforms like Spotify reflect popularity, while Grammy Awards represent industry recognition.
 
 This project investigates whether these two measures are related by answering the following research questions:
-
 1. Which music genres have the highest average Spotify popularity among the Top 50 songs of 2019?
 2. Is Grammy recognition associated with Spotify popularity?
 
 ---
 
-Data Sources
-
+## 📊 Data Sources
 Two public datasets from Kaggle were used:
 
-Spotify Top 50 Songs (2019)
-
-Contains information about:
-
+**1. Spotify Top 50 Songs (2019)**
 - Track name
 - Artist
 - Genre
 - Popularity
 - Audio features (Energy, Danceability, BPM, Valence, etc.)
 
-Grammy Award Nominees and Winners
-
-Contains:
-
+**2. Grammy Award Nominees and Winners**
 - Award year
 - Nominee
 - Award category
 - Winning status
 
-The Grammy dataset was filtered to include only the 2019 Grammy Awards to match the Spotify dataset.
+*Note: The Grammy dataset was filtered to include only the 2019 Grammy Awards to match the Spotify dataset.*
 
 ---
 
-Database Design
-
+## 🗄️ Database Design
 The database was normalized into five related tables:
-
-- Artists
-- Genres
-- Tracks
-- Audio_Features
-- Grammy_Nominations
+- `Artists`
+- `Genres`
+- `Tracks`
+- `Audio_Features`
+- `Grammy_Nominations`
 
 Relationships were established using primary and foreign keys to reduce redundancy and improve query efficiency.
 
 ---
 
-Technologies Used
-
-- Python
-- Pandas
-- MySQL
-- MySQL Workbench
-- Matplotlib
-- Jupyter Notebook
+## 🛠️ Technologies Used
+- **Python** (Pandas, Matplotlib)
+- **SQL** (MySQL, MySQL Workbench)
+- **Jupyter Notebook**
 
 ---
 
-Project Structure
-
-```
+## 📂 Project Structure
+```text
 Music-Analytics/
 │
 ├── data/
@@ -97,111 +77,79 @@ Music-Analytics/
 ├── visualizations.ipynb
 │
 ├── presentation.pdf
-├── README.md
+└── README.md
 ```
 
 ---
 
-Installation
+## ⚙️ Installation & Setup
 
-Clone the repository:
-
+**1. Clone the repository:**
 ```bash
-git clone https://github.com/AnaP2020/Music-Analytics-SQL-Project.git
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 ```
 
-Move into the project folder:
-
+**2. Move into the project folder:**
 ```bash
-cd music-analytics
+cd YOUR_REPO_NAME
 ```
 
-Install the required packages:
-
+**3. Install the required packages:**
 ```bash
 pip install pandas mysql-connector-python matplotlib jupyter
 ```
 
 ---
 
-Running the Project
+## 🚀 Running the Project
 
-1. Clean and prepare the datasets
-
+**1. Clean and prepare the datasets:**
 ```bash
 python data_wrangling_music.py
 ```
 
-2. Create the MySQL database
-
+**2. Create the MySQL database:**
 ```bash
 python create_database.py
 ```
 
-3. Insert the data into the database
-
+**3. Insert the data into the database:**
 ```bash
 python insert_data.py
 ```
 
-4. Run the SQL queries
+**4. Run the SQL queries:**
+Open MySQL Workbench and execute the queries in `queries.sql`.
 
-Open MySQL Workbench and execute:
-
-```
-queries.sql
-```
-
-5. Generate the visualizations
-
-Open:
-
-```
-visualizations.ipynb
-```
-
-Run all notebook cells.
+**5. Generate the visualizations:**
+Open `visualizations.ipynb` and run all notebook cells.
 
 ---
 
-Main Findings
+## 💡 Main Findings
 
-Research Question 1
-
-Which genres have the highest average Spotify popularity?
-
-- DFW Rap, Electropop and Reggaeton showed the highest average popularity.
+**Research Question 1: Which genres have the highest average Spotify popularity?**
+- DFW Rap, Electropop, and Reggaeton showed the highest average popularity.
 - Pop-related genres performed well but were not consistently the most popular.
+- *Hypothesis: Partially supported.*
 
-Hypothesis: Partially supported.
-
----
-
-Research Question 2
-
-Is Grammy recognition associated with Spotify popularity?
-
+**Research Question 2: Is Grammy recognition associated with Spotify popularity?**
 - Artists with more Grammy nominations generally had high Spotify popularity.
 - However, some artists with only one nomination also achieved very high popularity.
-
-Hypothesis: Partially supported.
+- *Hypothesis: Partially supported.*
 
 ---
 
-Visualizations
-
+## 📈 Visualizations
 The project includes:
-
 - Average Spotify Popularity by Genre
 - Grammy Nominations Among Spotify Top 50 Artists
 - Grammy Nominations vs Spotify Popularity
 
 ---
 
-Future Improvements
-
+## 🔮 Future Improvements
 Possible extensions include:
-
 - Include multiple years instead of only 2019
 - Analyze Spotify streams instead of popularity score
 - Include additional music awards
@@ -209,11 +157,9 @@ Possible extensions include:
 
 ---
 
-Authors
-
+## 👥 Authors
 - Ana Rita Preto
 - Ailixier Kuerban
-
 Ironhack — Database Systems Project
 
 The complete project presentation is available in the link:
